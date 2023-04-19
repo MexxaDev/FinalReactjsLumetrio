@@ -1,0 +1,306 @@
+/* -----------------------------------------------------------------------------------------------General */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13.5px;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(https://images2.alphacoders.com/127/1274455.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------------------------------------------------------------------------------------------NAV */
+.nav{
+    background: linear-gradient(-45deg, #660735, #e73c7e, #0C0F50, #050C34, #A3083F);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    
+    z-index: 999;
+    position: fixed;
+    top: 0;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    30% {
+        background-position: 100% 50%;
+    }
+    70% {
+        background-position: 0% 50%;
+    }
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+    align-content: center;
+    color: white;
+    list-style: none;
+}
+li{
+    margin: 0em 1em;
+}
+/* -----------------------------------------------------------------------------------------------Inicio*/
+.SectionInicio{
+    margin: 8em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    scroll-padding-top: 10px;
+}
+.SectionInicio__Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30em;
+    width: 100%;
+}
+.SectionInicio__Card__Home--logo{
+    width: 10em;
+    border-radius: 10em;
+}
+.SectionInicio__Card_Home--btnContact{
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+    background: rgba(61, 48, 112, 0.469);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 3em;
+}
+/* -----------------------------------------------------------------------------------------------Sobre mi */
+.SectionSobremi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 13em 0em;
+}
+.SectionSobremi--card{
+    width: 80%;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 19em;
+    text-align: center;
+    background: rgba(61, 48, 112, 0.469);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    align-items: center;
+}
+.SectionSobremi--card__img{
+    width: 20em;
+    height: 10em;
+    border-radius: 1em;
+}
+.SectionSobremi--card__contInfo{
+    width: 18em;
+}
+.SectionSobremi--card__contInfo--title{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.SectionSobremi--card__contSkills{
+    width: 8em;
+}
+/* -----------------------------------------------------------------------------------------------Project*/
+.SectionProyecto{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.componentProject{
+    height: 200px;
+    margin: 1em;
+    text-align: center;
+    background: rgba(61, 48, 112, 0.469);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    color: white;
+}
+.componentProject:hover{
+
+    background: rgba(50, 25, 151, 0.925);
+    cursor: pointer;
+}
+.componentPorject__contTitle{
+    margin-top: 30px;
+}
+.componentPorject__contImg--img{
+    width: 200px;
+    height: 115px;
+}
+/* -------------------------------------------------------------------------------------------------contacto*/
+
+/* -------------------------------------------------------------------------------------------------popup */
+.popup{
+    width: 16em;
+    height: 11em;
+    background: rgba(61, 48, 112, 0.514);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 1em;
+    border: 1px solid rgba(204, 187, 187, 0.062);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-name: slidein;
+    animation-name: slidein;
+    z-index: 9999;
+}
+.popup--contenedorBtnes{
+    display: flex;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    border: 1px solid rgba(204, 187, 187, 0.062);
+    padding: 0.4em;
+}
+.popup--contenedorBtnes__circle-1{
+    background-color: red;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 3em;
+    margin: 0em 0.2em;
+}
+.popup--contenedorBtnes__circle-2{
+    background-color: rgb(255, 251, 0);
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 3em;
+    margin: 0em 0.2em;
+}
+.popup--contenedorBtnes__circle-3{
+    background-color: rgb(94, 255, 0);
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 3em;
+    margin: 0em 0.2em;
+}
+.popup--contenedorText{
+    padding: 0.6em;
+    color: rgb(232, 216, 250);
+}
+.popup--contenedorText__parrafo{
+    opacity: 10;
+}
+.linkPopup{
+    -webkit-animation: fluido 10s ease-in-out infinite;
+    animation: fluido 10s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* -----------------------------------------------------------------------------API */
+.imgApi{
+    
+    width: 40%;
+}
+
+/* --------------------------------------------------------------------------CONTACTO */
+.SectionContacto{
+    display: flex;
+    justify-content: center;
+    margin: 10em;
+    height: 20em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    padding: 1em;
+    border-radius: 1em;
+    background: rgba(61, 48, 112, 0.469);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+form h3{
+    font-size: 18px;
+    margin: 10px 0px 10px 0px;
+}
+form input{
+    width: 18em;
+    margin: 0.7em 0em;
+}
+form textarea{
+    width: 18em;
+    margin: 1em 0em;
+}
+form a{
+    text-decoration: none;
+    color: white;
+    background: rgba(61, 48, 112, 0.469);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    padding: 0.4em;
+    margin-top: 5em;
+    border-radius: 1em;
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 913px) {
+
+    .SectionProyecto{
+        flex-direction: row;
+
+    }
+    .SectionSobremi--card {
+        height: auto;
+        flex-direction: column
+    } 
+    .SectionSobremi--card__img{
+        margin-top: 20px;
+    }
+    .SectionSobremi--card__contSkills{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 500px){
+    li{
+        font-size: 10px;
+    }
+}
